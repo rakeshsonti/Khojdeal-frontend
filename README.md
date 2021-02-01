@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Data Parsing App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction:
 
-## Available Scripts
+This is simple data parsing app whoose take json data from employee and parse thoose data and store in database , when stack holder login using valid email and password he get back all important info related to employee, In this application stack holder have a option to get email from application if stack holder click on get email button stack holder get back all employee data as a email.
 
-In the project directory, you can run:
+## Modules:
 
-### `npm start`
+**There are various modules in this application**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Login Module:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+In login module stack holder put email and password and login , if email and password is wrong it will throw an error otherwise stack holder reach to the home page.
 
-### `npm test`
+### Signup Module:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In Signup module stack holder put name, email and password, email should be unique other wise it will throw an error . Once Stack holder successfully signup it will nove to the login page where stack holder can login.
 
-### `npm run build`
+### EmployeeForm Module:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This module don't require authentication, any one with the link can fill this form. This form for survey purpose. Once the employee fill the form employee data will be saved into the database that would be later on analyed by stack holder.
+In EmployeeForm module we have following field.
+Emp Id,Name,DOJ,Mobile Number,Status, State, City,Added_on,Updated_on,User Status,Reason for Rejection,Upload Source, and submit button for submitting the form.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Home Module:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Home module is authenticated means without authentication no one can come to the home page. This module for stack holder, stack holder can come and analyse the employye data on home module. In Home module the is a button on which click stack holder can see data of employee that was added,updated and deletd on various date.
+There is option to get email . So stack holder can click and get email button and get all data on email.
 
-### `npm run eject`
+## Tools and teachnology:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-  ReactJS (16+).
+-  MongoDB.
+-  NodeJS.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to run locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-  open new window in vscode and clone the following git repo.
+-  > git clone https://github.com/rambhajansonti/Khojdeal-frontend
+-  open Khojdeal-frontend folder.
+-  run following command on terminal.
+-  > git install
+-  above command install all dependency locally, now start tha application using following command.
+-  > npm start
+-  after some time you can see application has started in new tab.
+-  play with your application , make sure you started backend application.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Project Link
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[project link](https://github.com/rambhajansonti/Khojdeal-frontend).
