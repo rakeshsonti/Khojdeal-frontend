@@ -8,14 +8,15 @@ function Home(props) {
    const [name, setName] = useState("");
    const [email, setEmail] = useState("");
    const emailHandler = () => {
-      fetch("http://localhost:9999/allUser", {
+      console.log("email: ", email);
+      fetch("http://localhost:9999/sendEmail", {
          method: "POST",
          headers: {
             "Content-Type": "application/json",
          },
          body: JSON.stringify({
-            email,
-            name,
+            email: email,
+            name: name,
          }),
          credentials: "include",
       }).then((r) => {
@@ -38,7 +39,6 @@ function Home(props) {
             setAllUserData([...r.user]);
          });
    };
-   // console.log("user all data:", allUserData);
    useEffect(() => {
       fetch("http://localhost:9999/getName", {
          method: "GET",
@@ -89,8 +89,9 @@ function Home(props) {
             props.active("login");
          }
       });
-
-      return (
+   };
+   return (
+      <>
          <div className="container">
             <div className="subcontainer">
                <h3>Stack holder Name :{name} </h3>
@@ -179,7 +180,7 @@ function Home(props) {
                </Table>
             ) : null}
          </div>
-      );
-   };
+      </>
+   );
 }
 export default Home;
