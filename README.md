@@ -39,7 +39,7 @@ There is option to get email . So stack holder can click and get email button an
 -  > git clone https://github.com/rambhajansonti/Khojdeal-frontend
 -  open Khojdeal-frontend folder.
 -  run following command on terminal.
--  > git install
+-  > npm install
 -  above command install all dependency locally, now start tha application using following command.
 -  > npm start
 -  after some time you can see application has started in new tab.
